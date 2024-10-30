@@ -5,7 +5,7 @@ INC_PATH := include/
 all: compile
 
 compile: git
-	@gcc -g -std=c17 -O2 -I$(INC_PATH) main.c src/natcn.c -o natcn
+	@gcc -Wno-unused-result -g -std=c17 -O2 -I$(INC_PATH) main.c src/natcn.c -o natcn
 
 run: compile
 	@./natcn
