@@ -16,6 +16,24 @@
 
 `main.c` 为主函数入口，它会调用 `src` 目录下的所有函数以完成程序的功能
 
+## 运行方式
+
+请使用下面的命令编译和运行程序：
+
+```shell
+gcc -g -std=c17 -O2 -Iinclude src/natcn.c main.c -o natcn
+# Windows
+./natcn.exe
+# Linux or MacOS
+./natcn
+```
+
+如果你是 Linux 或 MacOS 用户，你可以使用 Makefile 来编译和运行程序：
+
+```shell
+make run
+```
+
 ## 提交方式
 
 你可以最朴实无华地使用 GUI 提交压缩包。
