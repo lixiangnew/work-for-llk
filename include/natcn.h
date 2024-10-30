@@ -2,6 +2,7 @@
 
 /* Implement All These Function in src/natcn.c */
 
+#include <stdlib.h>
 #include <stdbool.h>
 
 /*

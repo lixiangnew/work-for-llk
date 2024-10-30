@@ -1,5 +1,4 @@
 #include "natcn.h"
-#include <stdlib.h>
 
 void init(int map[][505], int n, int m) {
     // Write your code here
