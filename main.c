@@ -24,22 +24,35 @@ int main() {
         }
     }
 
+    // Implement the following functions in src/natcn.c
+    // Initialize Value-Position pair array with the given map.
     init(map, n, m);
 
+    // See it as pos[2][2] if you don't understand it.
     int *pos[2];
     for(int i = 1; i <= n * m / 2; i++) {
+
+        // Iterate four directions
         for(int d = 0; d < 4; d++) {
+            // Implement the following function in src/natcn.c
+            // Get the position of the given value.
             pos[0] = get_position(i, 0);
             pos[1] = get_position(i, 1);
 
+            // Implement the following function in src/natcn.c
+            // Check whether Alan Walker can be under the sea.
             if(walk(map, n, m, pos[0][0], pos[0][1], dx[d], dy[d]) &&
                walk(map, n, m, pos[1][0], pos[1][1], dx[d], dy[d])) {
+
+                // Value i is able to be removed.
                 printf("%d ", i);
+                // Remove the value i from the map
                 map[pos[0][0]][pos[0][1]] = 0;
                 map[pos[1][0]][pos[1][1]] = 0;
                 break;
             }
             
+            // Free the memory allocated in get_position, you may not understand it now, but you will understand it in the future.
             free(pos[0]);
             free(pos[1]);
         }
