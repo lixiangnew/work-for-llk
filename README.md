@@ -18,7 +18,15 @@
 
 ## 运行方式
 
-请使用下面的命令编译和运行程序：
+如果你是 CLion 用户，你可以直接运行 CMakeLists 中的 `natcn` 目标
+
+如果你是 Linux 或 MacOS 用户，你可以使用 Makefile 来编译和运行程序：
+
+```shell
+make run
+```
+
+否则，（或者你想自己在终端中完成编译）请切换到 `main.c` 所在的目录，使用下面的命令编译和运行程序：
 
 ```shell
 gcc -g -std=c17 -O2 -Iinclude src/natcn.c main.c -o natcn
@@ -26,12 +34,6 @@ gcc -g -std=c17 -O2 -Iinclude src/natcn.c main.c -o natcn
 ./natcn.exe
 # Linux or MacOS
 ./natcn
-```
-
-如果你是 Linux 或 MacOS 用户，你可以使用 Makefile 来编译和运行程序：
-
-```shell
-make run
 ```
 
 ## 提交方式
