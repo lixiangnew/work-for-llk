@@ -1,0 +1,6 @@
+# ninja log v6
+1	416	7521504358575057	CMakeFiles/natcn.dir/main.c.obj	41d248903f998553
+101	517	7521504359537628	CMakeFiles/natcn.dir/src/natcn.c.obj	96f0aee9458748ac
+517	915	7521504363715003	natcn.exe	bfe4379d5bc59f81
+3	389	7521515657097317	CMakeFiles/natcn.dir/src/natcn.c.obj	96f0aee9458748ac
+390	771	7521515660969350	natcn.exe	bfe4379d5bc59f81
